@@ -1,0 +1,20 @@
+//
+// Forms
+// --------------------------------------------------
+// フォームに関するクラス
+// --------------------------------------------------
+
+
+// Common form controls
+// -------------------------
+// Bootstrap標準のフォームのスタイルをサイトに合わせて調整
+// -------------------------
+.form-control {
+  background-color: $input-bg;
+  //font-size: $font-size-base * 1.14;
+  font-size: 14px;
+  padding: 0.75rem;
+  border-width: 1px;
+  //border-radius: 0;
+  @include form-control-focus;
+}

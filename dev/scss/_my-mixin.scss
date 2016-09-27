@@ -1,0 +1,25 @@
+// button-solid-shadow
+// -------------------------
+// 各ボタンにシャドウを付けるためのmixin
+// _buttons.scssなどで使用
+// -------------------------
+@mixin button-solid-shadow($border) {
+  box-shadow: 0 $btn-solid-shadow-width 0 $border;
+  margin-bottom: $btn-solid-shadow-width;
+  &:hover {
+    box-shadow: 0 $btn-solid-shadow-width 0 $border, 0 $btn-solid-shadow-width 10px rgba($body-color, .3);
+  }
+}
+
+
+
+// Form control focus state
+// -------------------------
+// フォーカスされた際にbox-shadowをなしにするmixin
+// _forms.scssの「.form-control」で使用
+// -------------------------
+@mixin form-control-focus($color: $input-border-focus) {
+  &:focus {
+    @include box-shadow(none);
+  }
+}

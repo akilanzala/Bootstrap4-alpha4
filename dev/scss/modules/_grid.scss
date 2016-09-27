@@ -1,0 +1,83 @@
+//
+// Grid
+// --------------------------------------------------
+// グリッドに関するクラス
+// --------------------------------------------------
+
+// row-〜
+// -------------------------
+// Bootstrap標準のgutter幅を調整するクラス
+// モバイルビュー時に適応
+// -------------------------
+@include media-breakpoint-up(md) {
+  .row-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+    > div {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+  .row-10 {
+    margin-left: -5px;
+    margin-right: -5px;
+    > div {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+  .row-20 {
+    margin-left: -10px;
+    margin-right: -10px;
+    > div {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.row-all
+-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+  > div {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+.row-all-10 {
+  margin-left: -5px;
+  margin-right: -5px;
+  > div {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+// col-gold
+// -------------------------
+// Bootstrap標準のGridSystemを黄金比にするクラス
+// -------------------------
+.gold-wrap {
+  padding: 0 15px;
+}
+
+.col-gold-lg {
+  width: 61.8%;
+}
+
+.col-gold-sm {
+  width: 38.2%;
+}
+
+.col-gold-lg,
+.col-gold-sm {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

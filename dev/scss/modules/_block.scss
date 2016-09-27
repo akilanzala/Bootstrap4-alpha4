@@ -1,0 +1,239 @@
+//
+// Block
+// --------------------------------------------------
+// blockに関するクラス
+// --------------------------------------------------
+.container-full {
+  &:after {
+    clear: both;
+    }
+  @media (min-width: 768px) {
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+ }
+
+// frame
+// -------------------------
+// 各セクションを包括するフレーム用のクラス
+// -------------------------
+.frame {
+  overflow: hidden;
+  padding-top: $base-size * 2;
+  padding-bottom: $base-size * 2;
+  @include media-breakpoint-up(md) {
+    padding-top: $base-size * 4;
+    padding-bottom: $base-size * 4;
+    background-position: 50% 50%;
+    //background-size: cover;
+  }
+  &.is-img {
+    color: #fff ;
+    text-shadow: 0px 1px 1px #000;
+    background-position: 50% 50%;
+    background-size: cover;
+    a {
+      text-shadow: none;
+    }
+    .section-title, p {
+      color: #FFF;
+      font-weight: bold;
+    }
+  }
+  &__secondary {
+    background: #f5f7f9;
+    border: 1px solid #e9eaec;
+  }
+}
+// block / margin
+// -------------------------
+// 上下marginを調整するためのクラス
+// -------------------------
+.block-lg {
+  margin-top: $base-size * 1.5;
+  margin-bottom: $base-size * 1.5;
+  @include media-breakpoint-up(md) {
+    margin-top: $base-size * 3;
+    margin-bottom: $base-size * 3;
+  }
+}
+.block-md {
+  margin-top: $base-size;
+  margin-bottom: $base-size;
+  @include media-breakpoint-up(md) {
+    margin-top: $base-size * 2;
+    margin-bottom: $base-size * 2;
+  }
+}
+.block-sm {
+  margin-top: $base-size / 1.5;
+  margin-bottom: $base-size / 1.5;
+  @include media-breakpoint-up(md) {
+    margin-top: $base-size;
+    margin-bottom: $base-size;
+  }
+}
+.block-xs {
+  margin-top: $base-size / 2;
+  margin-bottom: $base-size / 2;
+}
+
+
+// block / padding
+// -------------------------
+// 上下paddingを調整するためのクラス
+// 各セクションに使用
+// -------------------------
+.block-padding-lg {
+  padding-top: $base-size * 1.5;
+  padding-bottom: $base-size * 1.5;
+  @include media-breakpoint-up(md) {
+    padding-top: $base-size * 3;
+    padding-bottom: $base-size * 3;
+  }
+}
+.block-padding-md {
+  padding-top: $base-size;
+  padding-bottom: $base-size;
+  @include media-breakpoint-up(md) {
+    padding-top: $base-size * 2;
+    padding-bottom: $base-size * 2;
+  }
+}
+.block-padding-sm {
+  padding-top: $base-size / 1.5;
+  padding-bottom: $base-size / 1.5;
+  @include media-breakpoint-up(md) {
+    padding-top: $base-size;
+    padding-bottom: $base-size;
+  }
+}
+.block-padding-xs {
+  padding-top: $base-size / 2;
+  padding-bottom: $base-size / 2;
+}
+
+// block / all-padding
+// -------------------------
+// 四方のpaddingを調整するためのクラス
+// 各セクションに使用
+// -------------------------
+.all-padding-lg {
+  padding: $base-size * 1.5;
+  @include media-breakpoint-up(md) {
+    padding: $base-size * 3;
+  }
+}
+.all-padding-md {
+  padding: $base-size;
+  @include media-breakpoint-up(md) {
+    padding: $base-size * 2;
+  }
+}
+.all-padding-sm
+ {
+  padding: $base-size / 1.5;
+  @include media-breakpoint-up(md) {
+    padding: $base-size;
+  }
+}
+.all-padding-xs {
+  padding: $base-size / 4;
+  @include media-breakpoint-up(md) {
+    padding: $base-size / 2;
+  }
+}
+
+// Margin
+// -------------------------
+// タグやクラスなどに設定されているmarginを上書きするクラス($base-size=30px)
+// lg=45px md=15px sm=10px
+// -------------------------
+.mt-lg {
+  margin-top: $base-size * 1.5 !important;
+  @include media-breakpoint-up(md) {
+    margin-top: $base-size * 2 !important;
+  }
+}
+.mt-md {
+  margin-top: $base-size / 2 !important;
+  @include media-breakpoint-up(md) {
+    margin-top: $base-size !important;
+  }
+}
+.mt-sm {
+  margin-top: $base-size / 3 !important;
+  @include media-breakpoint-up(md) {
+    margin-top: $base-size / 2 !important;
+  }
+}
+.mb-lg {
+  margin-bottom: $base-size * 1.5 !important;
+  @include media-breakpoint-up(md) {
+    margin-bottom: $base-size * 2 !important;
+  }
+}
+.mb-md {
+  margin-bottom: $base-size / 2 !important;
+  @include media-breakpoint-up(md) {
+    margin-bottom: $base-size !important;
+  }
+}
+.mb-sm {
+  margin-bottom: $base-size / 3 !important;
+  @include media-breakpoint-up(md) {
+    margin-bottom: $base-size / 2 !important;
+  }
+}
+
+
+// Padding
+// -------------------------
+// タグやクラスなどに設定されているpaddingを上書きするクラス($base-size=30px)
+// lg=45px md=15px sm=10px
+// -------------------------
+.pt-lg {
+  padding-top: $base-size * 1.5 !important;
+  @include media-breakpoint-up(md) {
+    padding-top: $base-size * 2 !important;
+  }
+}
+.pt-md {
+  padding-top: $base-size / 2 !important;
+  @include media-breakpoint-up(md) {
+    padding-top: $base-size !important;
+  }
+}
+.pt-sm {
+  padding-top: $base-size / 3 !important;
+  @include media-breakpoint-up(md) {
+    padding-top: $base-size / 2 !important;
+  }
+}
+.pb-lg {
+  padding-bottom: $base-size * 1.5 !important;
+  @include media-breakpoint-up(md) {
+    padding-bottom: $base-size * 2 !important;
+  }
+}
+.pb-md {
+  padding-bottom: $base-size / 2 !important;
+  @include media-breakpoint-up(md) {
+    padding-bottom: $base-size !important;
+  }
+}
+.pb-sm {
+  padding-bottom: $base-size / 3 !important;
+  @include media-breakpoint-up(md) {
+    padding-bottom: $base-size / 2 !important;
+  }
+}

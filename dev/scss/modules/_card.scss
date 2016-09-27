@@ -1,0 +1,22 @@
+//
+//
+// --------------------------------------------------
+// レイアウトに関するクラス
+// --------------------------------------------------
+.card-img-overlay {
+  background: rgba(#000, .5);
+  .card-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    @include media-breakpoint-down(md) {
+      margin-top: 0;
+    }
+  }
+  .card-text {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+    color: #FFF;
+  }
+}

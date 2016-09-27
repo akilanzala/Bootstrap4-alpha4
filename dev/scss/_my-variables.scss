@@ -1,0 +1,43 @@
+//
+// My Variables
+// --------------------------------------------------
+// Bootstrapにはない変数を定義
+// --------------------------------------------------
+
+
+//
+// Base Size
+// -------------------------
+// サイト全体のベースとなるサイズに関するプロパティ（$grid-gutter-width = 30px）
+// margin, padding, widthなどの値は全てこの変数を使用
+// -------------------------
+$base-size: $grid-gutter-width;
+
+
+//
+// Typography
+// -------------------------
+// サイトで使用するフォントファミリー関連のプロパティ
+// -------------------------
+// $font-family-oswald: 'Oswald', sans-serif;
+// $font-family-niconne: 'Niconne', cursive;
+
+
+//
+// Buttons
+// -------------------------
+// ボタンなどで使用するシャドウ関連プロパティ
+// _my-mixin.scss, _buttons.scssなどで使用
+// -------------------------
+$btn-solid-shadow-width: 3px;
+$btn-solid-shadow-color: rgba($gray, .5);
+
+//
+// Components
+// -------------------------
+// ボタンのサイズなどに使われるサイズ関連の変数を追加
+// _buttons.scssなどで使用
+// -------------------------
+$padding-xlarge-vertical:    20px !default;
+$padding-xlarge-horizontal:  26px !default;
+

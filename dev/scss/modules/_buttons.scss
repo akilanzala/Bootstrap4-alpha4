@@ -1,0 +1,50 @@
+//
+// Buttons
+// --------------------------------------------------
+// ボタンに関するクラス
+// --------------------------------------------------
+
+// Base styles
+// --------------------------------------------------
+// Bootstrap標準のボタン用のクラス「.btn」のスタイルをサイトに合わせて調整
+// サイト全体のボタンに使用
+// --------------------------------------------------
+.btn {
+  position: relative;
+  transition: .3s;
+  border-radius: 0;
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    box-shadow: inset 0 $btn-solid-shadow-width 5px rgba($body-color, .125) !important;
+    //top: $btn-solid-shadow-width;
+  }
+}
+
+.btn-xl {
+  padding: 1.6rem 0;
+  font-size: 18px;
+  font-weight: bold;
+  @include media-breakpoint-up(md) {
+    padding: 2rem 0;
+    font-size: 24px;
+  }
+}
+
+.btn-xs {
+  padding: 0 5px;
+  font-size: 10px;
+  line-height: 1.5;
+  border-radius: 0;
+}
+
+// Alternate buttons
+// --------------------------------------------------
+// Bootstrap標準のボタンにシャドウを追加
+// サイト全体のボタンに使用
+// --------------------------------------------------
+.btn-secondary {
+  border-color: rgba(#fff, .9);
+  background: rgba(#fff, .9);
+}

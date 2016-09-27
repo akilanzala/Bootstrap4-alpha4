@@ -1,0 +1,52 @@
+//
+// Scaffolding
+// --------------------------------------------------
+// リセット用のスタイル
+// --------------------------------------------------
+
+// Body reset
+// -------------------------
+// bodyのスタイルをサイトに合わせて調整
+// -------------------------
+body,html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  font-weight: 300;
+  word-wrap: break-word;
+  //text-rendering: optimizeLegibility;
+}
+img {
+  max-width: 100%;
+  transition: opacity .3s;
+  a:hover & {
+    opacity: .7;
+  }
+}
+p {
+  @include media-breakpoint-down(md) {
+    line-height: 1.6;
+  }
+}
+
+// Links
+// -------------------------
+// テキストリンクのスタイルをサイトに合わせて調整
+// -------------------------
+a {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+// p letter-spacing
+// -------------------------
+// 文字の間隔を調整(iOSに最適化)
+// Windowsでの閲覧が大半を占めるサイトの場合、メイリオに合わせて文字間や行間を広めに調整
+// -------------------------
+p {
+  letter-spacing : 0.05em;
+}
