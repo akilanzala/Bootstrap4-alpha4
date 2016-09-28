@@ -1,1 +1,0 @@
-!function(o){"use strict";o(".smoothScroll a").smoothScroll()}(jQuery);
